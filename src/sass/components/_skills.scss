@@ -1,0 +1,146 @@
+.left {
+	& > .pagCorrection {
+		margin-top: 186px;
+	}
+	& > .infoInputContainer {
+		& > .skillExp {
+			margin-top: -133px;
+			margin-bottom: -83px;
+		}
+		& > input {
+		}
+	}
+}
+
+.select-wrapper {
+	position: relative;
+	background-color: none;
+	// margin-top: -30px;
+	margin-top: -55px;
+	&::after {
+		content: "▼";
+		font-size: 2rem;
+		top: 9px;
+		right: 20px;
+		position: absolute;
+		color: red;
+		pointer-events: none;
+	}
+}
+
+#skills {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	height: 54px;
+	width: 455px;
+	top: 390px;
+	border-radius: 0px;
+	background: #ffffff;
+	text-indent: 57px;
+	border: 1px solid #525557;
+	box-sizing: border-box;
+	background-color: white;
+	font-size: 20px;
+	padding-right: 110px;
+
+	& > option {
+		color: red;
+		margin: 10px;
+		color: black;
+		background-color: inherit;
+	}
+}
+
+.skillBtn {
+	height: 32px;
+	width: 201px;
+	border-radius: 0px;
+	background: #fe3b1f;
+	border: none;
+	color: white;
+	margin-left: 261px;
+	margin-top: -70px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+
+	&:hover {
+		background: #f5543b;
+	}
+}
+
+.exper-wrapper {
+	margin-top: 20px;
+	// border: 2px solid red;
+	height: 200px;
+	overflow-y: scroll;
+	background-color: inherit;
+	// display: flex;
+	// flex-direction: column;
+
+	position: absolute;
+	top: 26rem;
+	// height: 30%;
+	& > .chosenExperience {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 2px solid #525557;
+		width: 100%;
+		background-color: inherit;
+		height: 54px;
+		width: 455px;
+		margin-bottom: 10px;
+
+		& > div {
+			width: 70%;
+			display: flex;
+			// justify-content: space-between;
+			align-items: center;
+			background-color: inherit;
+			& > span {
+				background-color: inherit;
+				margin-left: 25px;
+			}
+
+			& > .skillSpan {
+				font-family: Montserrat;
+				font-size: 18px;
+				font-style: italic;
+				font-weight: 400;
+				line-height: 17px;
+				letter-spacing: 0em;
+				text-align: left;
+			}
+			& > .experienSpan {
+				font-family: Montserrat;
+				font-size: 18px;
+				font-style: italic;
+				font-weight: 400;
+				line-height: 17px;
+				letter-spacing: 0em;
+				text-align: left;
+			}
+		}
+
+		& > button {
+			margin-right: 15px;
+
+			background: none;
+			border: none;
+			cursor: pointer;
+
+			& > img {
+				background: none;
+			}
+		}
+	}
+}
+
+.skillwarning {
+	position: absolute;
+	top: 285px;
+	left: 376px;
+	margin-left: -108px !important;
+	width: 25% !important;
+}

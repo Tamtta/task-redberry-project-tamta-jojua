@@ -1,0 +1,108 @@
+.personalInfoContainer {
+	height: 100vh;
+	display: flex;
+	& > .left {
+		width: 50%;
+		background-color: white;
+		& > h1 {
+			// height: 128px;
+			width: 100%;
+			margin-top: 57px;
+			font-family: Rowdies;
+			font-size: 64px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 79px;
+			letter-spacing: 0em;
+			text-align: center;
+
+			background-color: white;
+			color: #fe3b1f;
+		}
+
+		& > .infoInputContainer {
+			height: 300px;
+			margin-top: 59px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+			background-color: white;
+
+			& > input {
+				height: 54px;
+				width: 455px;
+				top: 390px;
+				border-radius: 0px;
+				background: #ffffff;
+				text-indent: 57px;
+				border: 1px solid #525557;
+				box-sizing: border-box;
+				background-color: white;
+				font-size: 20px;
+			}
+
+			& > input::placeholder {
+				height: 24px;
+				width: 195px;
+
+				font-family: Montserrat;
+				font-size: 14px;
+				font-style: italic;
+				font-weight: 400;
+				line-height: 17px;
+				letter-spacing: 0em;
+				text-align: left;
+
+				padding: -17px 203px 13px 57px;
+			}
+		}
+	}
+	& > .right {
+		overflow: hidden;
+		width: 50%;
+
+		& > h1 {
+			width: 716px;
+			height: 94px;
+			text-align: center;
+			font-family: Rowdies;
+			font-size: 64px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 79px;
+			letter-spacing: 0em;
+			// text-align: left;
+
+			// margin-top: 112px;
+			color: #fe3b1f;
+			margin: 112px auto;
+		}
+		& > p {
+			height: 606px;
+			width: 705px;
+			margin: -74px auto;
+			color: white;
+			font-family: Montserrat;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 48px;
+			letter-spacing: 0.05em;
+			text-align: left;
+		}
+	}
+}
+
+@media (max-width: 1488px) {
+	.personalInfoContainer {
+		flex-direction: column;
+		& > .left {
+			width: 100%;
+		}
+		& > .right {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

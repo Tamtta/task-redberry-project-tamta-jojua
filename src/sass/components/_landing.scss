@@ -1,0 +1,78 @@
+.landingContainer {
+	background: url(../assets/stars.svg);
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 100%;
+
+	& > .headerText {
+		position: relative;
+		font-family: Rowdies;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 96px;
+		line-height: 119px;
+		text-align: center;
+		color: #fe3b1f;
+		width: 100%;
+		top: 85px;
+	}
+
+	& > .btnConatiner {
+		width: 37%;
+		display: flex;
+
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 143px;
+		justify-content: space-around;
+		height: 159px;
+		& > .startBtn {
+			height: 79px;
+			width: 395px;
+			background: #fe3b1f;
+			border-radius: 50px;
+			height: 79px;
+			font-size: 24px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			border: none;
+			cursor: pointer;
+			border-radius: 50px;
+			color: white;
+		}
+
+		& > .submittedAppBtns {
+			width: 338px;
+			border-radius: none;
+			text-align: center;
+			font-size: 24px;
+			line-height: 29p;
+			text-decoration-line: underline;
+			background: none;
+			cursor: pointer;
+			color: #ffffff;
+			border: none;
+			top: 10px;
+		}
+	}
+
+	& > .rocketMan {
+		width: 409.92px;
+		height: 372.45px;
+		transform: rotate(-27.28deg);
+		position: relative;
+		z-index: -1;
+		top: 6rem;
+		left: 46%;
+		background-color: none;
+		transform: translateX(-50%);
+	}
+}

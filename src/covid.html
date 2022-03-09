@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Covid stuff</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<script type="module" defer src="./scripts/covidPage/main.js"></script>
+	</head>
+	<body>
+		<div class="personalInfoContainer covidcontainer">
+			<div class="left covidLeft">
+				<h1>Covid Stuff</h1>
+				<div class="questionare">
+					<div class="questionareItem">
+						<h2>how would you prefer to work</h2>
+						<div class="warning workPref hide warningPosition">
+							*working preference is required
+						</div>
+						<br />
+						<input
+							value="from_sairme"
+							id="sairme"
+							type="radio"
+							name="workMode"
+						/>
+						<label for="sairme">From Sairme Office</label>
+						<br />
+						<input value="from_home" id="home" type="radio" name="workMode" />
+						<label for="home">From Home</label>
+						<br />
+						<input value="hybrid" id="hybrid" type="radio" name="workMode" />
+						<label for="hybrid">Hybrid</label>
+					</div>
+
+					<div class="questionareItem">
+						<h2>Did you contact covid 19? :(</h2>
+						<div class="warning hide covidStatusWarn warningPosition">
+							*covid status check is required
+						</div>
+						<input
+							value="true"
+							id="yesInfection"
+							type="radio"
+							name="covidInfection"
+						/>
+						<label for="yesInfection">Yes</label>
+						<br />
+						<input
+							value="false"
+							id="noInfection"
+							type="radio"
+							name="covidInfection"
+						/>
+						<label for="noInfection">No</label>
+					</div>
+					<div class="questionareItem covidDate hide">
+						<h2>When</h2>
+						<input type="date" id="infectionDate" name="infectionDate" />
+						<div class="warning hide covidDateWarn">
+							*last covid infection date is required
+						</div>
+					</div>
+					<div class="questionareItem">
+						<h2>Have you been vaccinated</h2>
+						<div class="warning hide warningPosition vaccineWarn">
+							*vaccination status is required
+						</div>
+						<input
+							value="true"
+							id="yesVaccine"
+							type="radio"
+							name="vaccinationStatus"
+						/>
+						<label for="yesVaccine">Yes</label>
+						<br />
+						<input
+							value="false"
+							id="noVaccine"
+							type="radio"
+							name="vaccinationStatus"
+						/>
+						<label for="noVaccine">No</label>
+					</div>
+					<div class="questionareItem vaccinatedAt hide">
+						<h2>When did you get your last covid vaccine</h2>
+						<div class="warning hide warningPosition vaccineDateAtWarn">
+							*vaccination date is required
+						</div>
+						<input
+							id="lastVaccinationDate"
+							type="date"
+							name="lastVaccinationDate"
+						/>
+					</div>
+				</div>
+				<div class="pagination">
+					<button class="previous">
+						<img src="./assets/Previous.svg" alt="" />
+					</button>
+					<button class="activePagination disablePointerEvent"></button>
+					<button class="activePagination disablePointerEvent"></button>
+					<button class="activePagination disablePointerEvent"></button>
+					<button class="disablePointerEvent"></button>
+					<button class="next">
+						<img class="nextImg" src="./assets/Next.svg" alt="" />
+					</button>
+				</div>
+			</div>
+			<div class="right">
+				<h1>Redberry Covid Policies</h1>
+				<p>
+					As this infamous pandemic took over the world, we adjusted our working
+					practices so that our employees can be as safe and comfortable as
+					possible. We have a hybrid work environment, so you can either work
+					from home or visit our lovely office on Sairme Street. If it was up to
+					us, we would love you to see us in the office because we think
+					face-to-face communications > Zoom meetings. Both on the fun and
+					productivity scales.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

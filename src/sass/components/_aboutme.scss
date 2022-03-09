@@ -1,0 +1,42 @@
+#devtalkTopic {
+	height: 122px;
+	width: 535px;
+	left: 153px;
+	top: 572px;
+	border-radius: 0px;
+	resize: none;
+	background-color: inherit;
+	background: #ffffff;
+
+	border: 1px solid #525557;
+	box-sizing: border-box;
+	&::placeholder {
+		height: 32px;
+		width: 203px;
+		padding: 24px 0 0 23px;
+	}
+}
+
+#specialAboutMe {
+	height: 89px;
+	width: 535px;
+	left: 153px;
+	top: 790px;
+	border-radius: 0px;
+	background: #ffffff;
+	resize: none;
+	border: 1px solid #525557;
+	box-sizing: border-box;
+
+	border: 1px solid #525557;
+	box-sizing: border-box;
+	&::placeholder {
+		height: 32px;
+		width: 203px;
+		padding: 24px 0 0 23px;
+	}
+}
+
+.pagCorr {
+	margin-top: -10px;
+}

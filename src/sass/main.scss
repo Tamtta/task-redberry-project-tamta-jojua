@@ -1,0 +1,15 @@
+//abstract
+@import "./abstract/mixins";
+//base
+@import "./base/typography";
+@import "./base/reset";
+
+@import "./components/_landing.scss";
+@import "./components/_personalInfo.scss";
+@import "./components/_pagination.scss";
+@import "./components/_skills.scss";
+@import "./components/_covid.scss";
+@import "./components/_aboutme.scss";
+@import "./components/_submitPage.scss";
+@import "./components/_submittedApp.scss";
+@import "./components/_warnings.scss";

@@ -1,0 +1,137 @@
+body {
+	background-color: black;
+}
+.accordion-wrapper {
+	margin: -50px auto;
+	width: 80%;
+}
+
+.submittedTittle {
+	color: white;
+	margin: 66px 150px;
+	height: 100px;
+	width: 1128px;
+	font-family: Rowdies;
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 70px;
+	letter-spacing: 0.11em;
+	text-align: left;
+}
+
+.application-container {
+	display: grid;
+
+	grid-template-columns: 50% 50%;
+	& > div {
+		background-color: white;
+	}
+
+	& > .personal-information {
+		& > h3 {
+			@include setSubmittedTitle;
+		}
+		& > div {
+			margin-left: 30px;
+			margin-bottom: 10px;
+			width: 70%;
+			display: flex;
+			align-items: center;
+			& > span {
+				@include makeBackgroundWhite;
+			}
+			& > span:nth-child(1) {
+				width: 102px;
+				height: 42px;
+				left: 506px;
+				top: 554px;
+
+				font-family: Montserrat;
+				font-style: italic;
+				font-weight: bold;
+				font-size: 20px;
+				line-height: 15px;
+
+				color: #000000;
+			}
+			& > span:nth-child(2) {
+				width: 202px;
+				height: 42px;
+				left: 506px;
+				top: 554px;
+				margin-left: 10px;
+				font-family: Montserrat;
+				font-style: italic;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 15px;
+
+				color: #000000;
+			}
+			@include makeBackgroundWhite;
+		}
+	}
+
+	& > .covid-situation {
+		& > h3 {
+			@include setSubmittedTitle;
+		}
+		& > div {
+			@include correctSubmittedAppDivs;
+			@include makeBackgroundWhite;
+			& > h5 {
+				@include makeBackgroundWhite;
+			}
+			& > label {
+				@include makeBackgroundWhite;
+			}
+			& > input {
+				@include makeBackgroundWhite;
+			}
+
+			& > .dateInputs {
+				@include dateInputsStyles;
+			}
+		}
+		@include makeBackgroundWhite;
+	}
+
+	& > .insight {
+		@include makeBackgroundWhite;
+		& > h3 {
+			@include setSubmittedTitle;
+		}
+
+		& > div {
+			@include correctSubmittedAppDivs;
+			@include makeBackgroundWhite;
+			& > h5 {
+				width: 90%;
+				@include makeBackgroundWhite;
+			}
+			& > label {
+				@include makeBackgroundWhite;
+			}
+		}
+	}
+}
+
+.accordion-button {
+	background-color: #fe3b1f !important;
+	color: white !important;
+}
+
+.accordion-item {
+	border: none;
+	margin-bottom: 10px;
+}
+
+.accordion-body {
+	margin: 0;
+	padding: 0;
+}
+
+.disablePointerEvent {
+	pointer-events: none;
+}

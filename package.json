@@ -1,0 +1,15 @@
+{
+	"name": "redberry",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"sass": "npx sass --watch src/sass:src/css"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"sass": "^1.49.9"
+	}
+}

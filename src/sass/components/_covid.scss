@@ -1,0 +1,46 @@
+.personalInfoContainer {
+	& > .covidLeft {
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	& > .left {
+		& > .questionare {
+			background-color: inherit;
+			& > .questionareItem {
+				margin: 30px auto;
+				width: 70%;
+				& > #infectionDate,
+				#lastVaccinationDate {
+					height: 54px;
+					width: 455px;
+					left: 166px;
+					top: 736px;
+					border-radius: 0px;
+					&::placeholder {
+						color: red;
+					}
+				}
+				& > h2 {
+					height: 52px;
+					width: 645px;
+					font-family: Montserrat;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 22px;
+					letter-spacing: 0em;
+					text-align: left;
+					background-color: inherit;
+				}
+				& > input {
+					margin-bottom: 20px;
+					background-color: white;
+				}
+				& > label {
+					background-color: white;
+				}
+				background-color: white;
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+.pagination {
+	margin: 126px auto;
+	width: 40%;
+	height: 35px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: white;
+
+	& > button:not(:first-child):not(:last-child) {
+		width: 19px;
+		height: 19px;
+		border-radius: 18px;
+		background: none;
+		background: #fe3b1f;
+		opacity: 0.1;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		&:hover {
+			border: none;
+			opacity: 1;
+		}
+	}
+
+	& > .previous,
+	.next {
+		cursor: pointer;
+		color: #fe3b1f;
+		border: none;
+		background: none;
+		& > img {
+			background: none;
+		}
+	}
+}
+
+.activePagination {
+	border: none;
+	opacity: 1 !important;
+}

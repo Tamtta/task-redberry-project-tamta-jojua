@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About me</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<script defer type="module" src="./scripts/aboutMePage/main.js"></script>
+	</head>
+	<body>
+		<div class="personalInfoContainer covidcontainer">
+			<div class="left covidLeft">
+				<h1>What about you</h1>
+				<div class="questionare">
+					<div class="questionareItem">
+						<h2>Would you attend Devtalks and maybe also orginize your own</h2>
+						<div class="warning hide devTalkAttendWarning warningPosition">
+							*this field is required
+						</div>
+						<input
+							value="true"
+							id="yesAttend"
+							type="radio"
+							name="devtalksAttend"
+						/>
+						<label for="yesAttend">Yes</label>
+						<br />
+						<input
+							value="false"
+							id="noAttend"
+							type="radio"
+							name="devtalksAttend"
+						/>
+						<label for="noAttend">No</label>
+					</div>
+					<div class="questionareItem devTalkTopicDiv hide">
+						<h2>What would you speal about at Devtalks</h2>
+						<div class="warning hide devTalkTopicWarning warningPosition">
+							*this field is required
+						</div>
+						<textarea
+							placeholder="I would"
+							name="devtalkTopic"
+							id="devtalkTopic"
+							cols="30"
+							rows="10"
+						></textarea>
+					</div>
+
+					<div class="questionareItem">
+						<h2>Tell us something special</h2>
+						<div class="warning hide specialAboutMeWarning warningPosition">
+							*this field is required
+						</div>
+						<textarea
+							name="specialAboutMe"
+							id="specialAboutMe"
+							cols="30"
+							rows="10"
+							placeholder="I..."
+						></textarea>
+					</div>
+				</div>
+				<div class="pagination pagCorr">
+					<button class="previous">
+						<img src="./assets/Previous.svg" alt="" />
+					</button>
+					<button class="activePagination disablePointerEvent"></button>
+					<button class="activePagination disablePointerEvent"></button>
+					<button class="activePagination disablePointerEvent"></button>
+					<button class="activePagination disablePointerEvent"></button>
+					<button class="next">
+						<img class="nextImg" src="./assets/Next.svg" alt="" />
+					</button>
+				</div>
+			</div>
+			<div class="right">
+				<h1>Redberrians Insights</h1>
+				<p>
+					We were soo much fun before the pandemic started! Parties almost every
+					weekend and lavish employee birthday celebrations! Unfortunately,
+					covid ruined that fun like it did almost everything else in the world.
+					But we try our best to zhuzh it up a bit. For example, we host
+					biweekly Devtalks where our senior and lead developers talk about
+					topics they are passionate about. Previous topics have included Web3,
+					NFT, Laravel 9, Kubernetes, etc. We hold these talks in the office but
+					you can join our Zoom broadcast as well. Feel free to join either as
+					an attendee or a speaker!
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+.warning {
+	background-color: inherit;
+	margin-left: -10px;
+	height: 16px;
+	width: 209px;
+	color: #fe3b1f;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 13px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.border-warning {
+	border-color: #fe3b1f !important;
+}
+
+.hide {
+	display: none;
+}
+
+.warningPosition {
+	margin-bottom: 10px;
+	margin-top: -20px;
+	margin-left: 1px;
+	width: 50%;
+	font-size: 18px;
+	font-weight: bold;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Skills</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<script defer src="./scripts/skills/main.js" type="module"></script>
+	</head>
+	<body>
+		<div class="personalInfoContainer">
+			<div class="left">
+				<h1>Tell us about your skills</h1>
+				<div class="infoInputContainer">
+					<div class="select-wrapper">
+						<select id="skills" name="select"></select>
+					</div>
+					<span class="warning skillwarning hide" style="position: absolute"></span>
+					</span>
+					<input
+						class="skillExp"
+						type="text"
+						placeholder="Experience Duration In Years"
+					/>
+
+					<button class="skillBtn">Add Programming Language</button>
+
+					<div class="hide exper-wrapper"></div>
+				</div>
+				<div class="pagination pagCorrection">
+					<button class="previous">
+						<img src="./assets/Previous.svg" alt="" />
+					</button>
+					<button class="activePagination disablePointerEvent"></button>
+					<button class="activePagination disablePointerEvent"></button>
+					<button class="disablePointerEvent"></button>
+					<button class="disablePointerEvent"></button>
+					<button class="next">
+						<img class="nextImg" src="./assets/Next.svg" alt="" />
+					</button>
+				</div>
+			</div>
+			<div class="right">
+				<h1>A bit about our battles</h1>
+				<p>
+					As we said, Redberry has been on the field for quite some time now,
+					and we have touched and embraced a variety of programming languages,
+					technologies, philosophies, and frameworks. We are battle-tested in
+					PHP Laravel Stack with Vue.js, refined in React, and allies with
+					Serverside technologies like Docker and Kubernetes, and now we have
+					set foot in the web3 industry.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
